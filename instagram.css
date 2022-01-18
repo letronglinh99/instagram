@@ -1,33 +1,46 @@
-body {
-    background: #fafafa!important;
-    font-size: 14px;
+* {
+    margin: 0;
+    padding: 0;
 }
 
-.wrapper .header {
+.nen {
+    padding-top: 70px;
+    height: 650px;
+    float: right;
+    margin: 10px;
+}
+
+body {
+    background-color: #fafafa!important;
+}
+
+.right {
+    height: auto;
+    float: left;
     max-width: 350px;
     width: 100%;
     height: auto;
-    margin: 80px auto;
+    margin: 100px auto;
 }
 
-.wrapper .header .top,
-.wrapper .signup {
+.top,
+.signup {
     background: #fff;
     border: 1px solid #e6e6e6;
     border-radius: 1px;
     padding: 40px 40px 20px;
 }
 
-.wrapper .header .logo img {
+.right .logo img {
     display: block;
     margin: 0 auto 35px;
 }
 
-.wrapper .header .form .input_field {
+.right .form .input_field {
     margin-bottom: 5px;
 }
 
-.wrapper .header .form .input_field .input {
+.right .form .input_field .input {
     width: 100%;
     background: #fafafa;
     border: 1px solid #efefef;
@@ -37,11 +50,11 @@ body {
     padding: 10px;
 }
 
-.wrapper .header .form .input_field .input:focus {
+.right .form .input_field .input:focus {
     border: 1px solid #b2b2b2;
 }
 
-.wrapper .header .form .btn {
+.right .form .btn {
     margin: 10px 0;
     background-color: #3897f0;
     border: 1px solid #3897f0;
@@ -50,13 +63,13 @@ body {
     padding: 5px;
 }
 
-.wrapper .header .form .btn a {
+.right .form .btn a {
     color: #fff;
     display: block;
     text-decoration: none;
 }
 
-.wrapper .header .or {
+.right .or {
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -64,67 +77,67 @@ body {
     margin: 15px 0 20px;
 }
 
-.wrapper .header .or .line {
+.right .or .line {
     width: 105px;
     height: 2px;
     background: #efefef
 }
 
-.wrapper .header .or p {
+.right .or p {
     color: #999;
     font-size: 12px;
 }
 
-.wrapper .dif .fb {
+.right .dif .fb {
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.wrapper .dif .fb img {
+.right .dif .fb img {
     width: 16px;
     height: 16px;
 }
 
-.wrapper .dif .fb p {
+.right .dif .fb p {
     color: #385185;
     font-weight: 500;
     margin-left: 10px;
 }
 
-.wrapper .dif .forgot {
+.right .dif .forgot {
     font-size: 12px;
     text-align: center;
     margin-top: 20px;
 }
 
-.wrapper .dif .forgot a {
+.right .dif .forgot a {
     color: #003569;
     text-decoration: none;
 }
 
-.wrapper .signup {
+.right .signup {
     margin: 10px 0 20px;
     padding: 25px 40px;
     text-align: center;
     color: #262626;
 }
 
-.wrapper .signup a {
+.right .signup a {
     color: #3897f0;
     text-decoration: none;
 }
 
-.wrapper .apps {
+.right .apps {
     text-align: center;
     color: #262626;
 }
 
-.wrapper .apps p {
+.right .apps p {
     margin-bottom: 20px;
 }
 
-.wrapper .apps a img {
+.right .apps a img {
     width: 135px;
     height: 40px;
     margin: 0 5px;

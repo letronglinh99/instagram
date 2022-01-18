@@ -1,5 +1,4 @@
-/* Css left of main */
-.friend_list {
+main .friend_list {
   /* width: 500px; */
   height: 120px;
 }
@@ -9,14 +8,17 @@
   height: 100px;
 }
 
-.friend_list .item .frame,
-img {
+.friend_list .item .frame {
   height: 80px;
+}
+.friend_list .item .frame img {
   object-fit: cover;
 }
 
 .friend_list .item p {
+  /* ellipsis : dấu ba chấm khi chữ dài quá */
   text-overflow: ellipsis;
+  /* 3 cái này đi liền vs nhau */
   white-space: nowrap;
   overflow: hidden;
 }
@@ -49,18 +51,6 @@ img {
 .friend_list .item {
   width: 80px;
   height: 100px;
-}
-
-.friend_list .item .frame,
-img {
-  height: 80px;
-  object-fit: cover;
-}
-
-.friend_list .item p {
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  overflow: hidden;
 }
 
 .news_list .news_item {

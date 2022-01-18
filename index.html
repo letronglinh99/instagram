@@ -25,67 +25,106 @@
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
-  <body style="min-height: 200vh">
-    <!-- header -->
-    <header class="header">
-      <div class="container">
-        <!-- header brand -->
-        <div class="row">
-          <div class="col col-sm-4">
-            <a class="header-brand" href="./index.html">
-              <img src="images/logo.png" alt="instagram logo" />
-            </a>
-          </div>
-          <!-- /header brand -->
-          <!-- header search -->
-          <div class="col-sm-4 d-none d-sm-block">
-            <form class="header-search">
-              <ion-icon class="header-search_icon" name="search"></ion-icon>
-              <input type="text" placeholder="Tìm kiếm" />
-              <ion-icon class="header-close_icon" name="close"></ion-icon>
-            </form>
-          </div>
-          <!-- /header search -->
-          <!-- header menu -->
-          <div class="col col-sm-4">
-            <div class="header-menu">
-              <a href="#!" class="header-menu_link">
-                <ion-icon name="home"></ion-icon>
-              </a>
-              <a href="#!" class="header-menu_link">
-                <ion-icon name="chatbubbles-outline"></ion-icon>
-              </a>
-              <a href="#!" class="header-menu_link">
-                <ion-icon name="add-circle-outline"></ion-icon>
-              </a>
-              <a href="#!" class="header-menu_link">
-                <ion-icon name="compass-outline"></ion-icon>
-              </a>
-              <a href="#!" class="header-menu_link">
-                <ion-icon name="heart-outline"></ion-icon>
-              </a>
-              <a href="#!" class="header-menu_link">
+  <header>
+      <body >
+    <nav class="navbar navbar-light bg-light">
+      <div class="container-fluid">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-1"></div>
+            <div class="col-md-2">
+              <a class="navbar-brand" href="#">
                 <img
-                  class="header-menu_user"
-                  src="./images/anh4.jpg"
-                  alt="châu tấn :)))"
+                  src="https://www.instagram.com/static/images/web/mobile_nav_type_logo.png/735145cfe0a4.png"
+                  height="31"
+                  alt="MDB Logo"
+                  loading="lazy"
                 />
               </a>
             </div>
+            <div class="col-md-5">
+              <form class="input-group w-auto search-form">
+                <input
+                  type="search"
+                  class="form-control rounded"
+                  placeholder="Tìm kiếm"
+                  aria-label="Tìm kiếm"
+                />
+              </form>
+            </div>
+            <div class="col-md-4">
+             <nav class="">
+  <div class="nav-bar">
+    <ul class="d-flex">
+      <!-- Icons -->
+      <li class="nav-item me-3 me-lg-0 ">
+        <a class="nav-link" href="#">
+            <i class="fas fa-home fa-lg text-dark"></i>
+         
+        </a>
+      </li>
+      <li class="nav-item me-3 me-lg-0">
+        <a class="nav-link" href="#">
+          <i class="fas fa-paper-plane fa-lg text-dark"></i>
+        </a>
+      </li>
+      <li class="nav-item me-3 me-lg-0">
+        <a class="nav-link" href="#">
+          <i class="fas fa-plus-circle fa-lg text-dark"></i> 
+        </a>
+      </li>
+       <li class="nav-item me-3 me-lg-0">
+        <a class="nav-link" href="#">
+          <i class="fas far fa-compass fa-lg text-dark"></i>
+        </a>
+      </li>
+       <li class="nav-item me-3 me-lg-0">
+        <a class="nav-link" href="#">
+          <i class="fas far fa-heart fa-lg text-dark"></i>
+        </a>
+      </li>
+  
+      <!-- Avatar -->
+      <li class="nav-item dropdown">
+        <a
+          class="nav-link  d-flex align-items-center"
+          href="#"
+
+          id="navbarDropdownMenuLink"
+          role="button"
+          data-mdb-toggle="dropdown"
+          aria-expanded="false"
+        >
+          <img
+            src="https://znews-photo.zadn.vn/w660/Uploaded/kbd_pilk/2022_01_08/chau_tan8.jpg"
+            class="rounded-circle"
+            height="22"
+            width ="22"
+            alt="Portrait of a Woman"
+            loading="lazy"
+          />
+        </a>
+        
+        
+      </li>
+      
+    </ul>
+  </div>
+</nav>
           </div>
-          <!-- /header menu -->
         </div>
       </div>
-    </header>
-    <!-- /header -->
-
-    <!-- main -->
-    <main class="pt-30 ">
-      <div class="container px-5">
+    </nav>
+  </body>
+  </header>
+   <main class="pt-5 ">
+      <div class="container px-5">  
         <div class="row">
           <!-- left of main-->
           <div class="col col-lg-8 mb-5">
-            <div class="friend_list border rounded d-flex pt-2">
+            <!-- list bạn bè -->
+            <div class="friend_list border rounded d-flex pt-2">  
+              
               <div class="item mx-3">
                 <div
                   class="frame border border-4 border-warning rounded-circle"
@@ -103,7 +142,7 @@
                 <p>Howkaoksdkokfow</p>
               </div>
             </div>
-
+<!-- news -->
             <div class="news_list mt-4">
               <div class="news_item border rounded">
                 <div
@@ -115,14 +154,15 @@
                         frame
                         border border-4 border-warning
                         rounded-circle
-                        me-3
+                        me-3 
                       "
-                    >
+                    > 
+                    <!-- me : margin right is 3 -->
                       <img
                         class="
-                          w-100
+                          w-100 <!-- độ rộng 100% ảnh bằng cái chứa nó -->
                           h-100
-                          border border-2 border-light
+                          border border-2 border-light 
                           rounded-circle
                         "
                         src="https://kenh14cdn.com/thumb_w/640/pr/2021/1616405323324-0-106-803-1392-crop-1616405331798-63752031497523.jpg"
@@ -169,6 +209,8 @@
                 </div>
               </div>
             </div>
+            <!-- end -->
+
           </div>
           <!--/left of main-->
 
@@ -263,21 +305,5 @@
       </div>
     </main>
     <!-- /main -->
-
-    <!-- Ion icons -->
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
-    ></script>
-    <!-- Bootstrap -->
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-      crossorigin="anonymous"
-    ></script>
-  </body>
+  
 </html>
